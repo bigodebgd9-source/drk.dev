@@ -34,10 +34,7 @@
 
   <script>
     function abrirApp() {
-      // Tenta abrir o app
       window.location.href = "moniteFF://";
-
-      // Fallback opcional: após 2 segundos sem redirecionar, mostra botão
       setTimeout(() => {
         document.getElementById('fallback').style.display = 'block';
       }, 2000);
@@ -53,7 +50,7 @@
   <div id="fallback" style="display:none;">
     <p>Se o aplicativo não abrir, toque no botão abaixo:</p>
     <a href="moniteFF://">Abrir moniteFF</a>
-    <small>Certifique-se de que o app moniteFF está instalado e que o esquema de URL está registrado.</small>
+    <small>Certifique-se de que o app está instalado no dispositivo.</small>
   </div>
 </body>
 </html>
